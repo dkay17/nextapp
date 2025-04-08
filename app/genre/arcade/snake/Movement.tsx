@@ -8,7 +8,7 @@ const SnakeHead = () => {
   
 
   useEffect(() => {
-    const handleKeyDown = (event) => {
+    const handleKeyDown = (event: any) => {
       const { key } = event;
       const { top, left } = position;
       const {toprightradius, topleftradius, bottomrightradius, bottomleftradius} = borderradius;
