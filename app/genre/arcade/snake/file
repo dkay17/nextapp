@@ -1,0 +1,10 @@
+if (borderRightRadius==='10px' && borderLeftRadius==='10px' 
+&& borderTopRadius==='15px' && borderBottomRadius==='15px'){
+ }
+
+toprightradius = 15;
+bottomrightradius = 15;
+topleftradius = 10;
+bottomleftradius = 10;
+
+

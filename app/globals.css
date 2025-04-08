@@ -87,14 +87,8 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: linear-gradient(to right, rgba(79, 251, 191, 0.3), rgba(79, 85, 251, 0.3), rgba(255, 0, 0,0.5));
 }
-
 a {
   color: inherit;
   text-decoration: none;
@@ -103,5 +97,61 @@ a {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+
+nav{
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  margin-right: 10px;
+}
+
+.but{
+  opacity: 0;
+  width: 30px;
+  display: none;
+}
+
+.main{
+  background: linear-gradient(to right, rgba(79, 251, 191, 0.3), rgba(79, 85, 251, 0.3), rgba(255, 0, 0,0.5));
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.headtop{
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  margin-top: 10px;
+  padding: 5px;
+  overflow: hidden;
+  height: 50px
+}
+
+.headtop span{
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 870px){
+  .but{
+    opacity: 1;
+  }
+  nav{
+    flex-direction: column;
+    gap: 0;
+    font-size: 20px;
+    
+  }
+  body{
+    background: linear-gradient(to right, green, blue);
+  }
+}
+@media only screen and (max-width: 470px){
+  nav .nav{
+    display: none;
   }
 }

@@ -1,0 +1,94 @@
+.games{
+    background: rgba( 10, 10, 10, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.genres{
+    background: rgba( 10, 10, 10, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.genrename{
+    display: flex;
+    justify-content: center;
+}
+
+.genres b::after{
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: rgba(255,255,255, 0.6);
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.gamelist{
+    padding-top: 5px;
+}
+
+.gamelist .playgame{
+    display: flex;
+    gap: 20px;
+}
+
+.playbutton{
+    font-size: 16px;
+    color: rgba(255,255,255, 0.6);
+    background: linear-gradient(to right, #5d06ceb3, #0692ceb3);
+    animation: animate 2s ease-in-out infinite;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.playbutton button{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background: transparent;
+    border: #fff;
+    animation: button 300ms ease-in-out infinite;
+    transition: border 3s ease;
+}
+
+@keyframes button{
+    0% {
+        border-top: 2px solid red;
+        border-right: 2px solid red;
+        border-bottom: 2px solid blue;
+        border-left: 2px solid blue;
+    }
+    25% {
+        border-top: 2px solid blue;
+        border-right: 2px solid red;
+        border-bottom: 2px solid red;
+        border-left: 2px solid blue;
+    }
+    50% {
+        border-top: 2px solid blue;
+        border-right: 2px solid blue;
+        border-bottom: 2px solid red;
+        border-left: 2px solid red;
+    }
+    100% {
+        border-top: 2px solid red;
+        border-right: 2px solid blue;
+        border-bottom: 2px solid blue;
+        border-left: 2px solid red;
+    }
+    
+}
+
+@keyframes animate{
+    0%, 100%{
+        color: #fff;
+    }
+
+    50%{
+        color: rgba(255,255,255, 0.6);
+    }
+}
